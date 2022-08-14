@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rocketsFragment">
+
+    <fragment
+        android:id="@+id/rocketsFragment"
+        android:name="com.dilara.spacex.fragments.RocketsFragment"
+        android:label="fragment_rockets"
+        tools:layout="@layout/fragment_rockets" >
+        <action
+            android:id="@+id/action_rocketsFragment_to_rocketDetailFragment"
+            app:destination="@id/rocketDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteRocketsFragment"
+        android:name="com.dilara.spacex.fragments.FavoriteRocketsFragment"
+        android:label="fragment_favorite_rockets"
+        tools:layout="@layout/fragment_favorite_rockets" >
+        <action
+            android:id="@+id/action_favoriteRocketsFragment_to_rocketDetailFragment"
+            app:destination="@id/rocketDetailFragment" />
+        <argument
+            android:name="rocket"
+            app:argType="com.dilara.spacex.model.Rockets" />
+    </fragment>
+    <fragment
+        android:id="@+id/upComingLaunchesFragment"
+        android:name="com.dilara.spacex.fragments.UpComingLaunchesFragment"
+        android:label="fragment_up_coming_launches"
+        tools:layout="@layout/fragment_up_coming_launches" >
+        <action
+            android:id="@+id/action_upComingLaunchesFragment_to_launchDetailFragment"
+            app:destination="@id/launchDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rocketDetailFragment"
+        android:name="com.dilara.spacex.fragments.RocketDetailFragment"
+        android:label="fragment_rocket_detail"
+        tools:layout="@layout/fragment_rocket_detail" >
+        <argument
+            android:name="rocketId"
+            app:argType="com.dilara.spacex.model.Rockets" />
+        <action
+            android:id="@+id/action_rocketDetailFragment_to_favoriteRocketsFragment"
+            app:destination="@id/favoriteRocketsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/launchDetailFragment"
+        android:name="com.dilara.spacex.fragments.LaunchDetailFragment"
+        android:label="fragment_launch_detail"
+        tools:layout="@layout/fragment_launch_detail" >
+        <argument
+            android:name="upcoming"
+            app:argType="com.dilara.spacex.model.upcoming_launches.UpcomingLaunches" />
+    </fragment>
+</navigation>

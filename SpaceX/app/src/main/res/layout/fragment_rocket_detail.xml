@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.RocketDetailFragment"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:padding="4dp"
+        android:id="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:padding="4dp"
+        android:id="@+id/btnFavorite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.jama.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="374dp"
+        android:layout_height="200dp"
+        app:enableSnapping="false"
+        app:indicatorAnimationType="drop"
+        app:indicatorPadding="6"
+        app:indicatorRadius="6"
+        app:indicatorSelectedColor="@color/purple_500"
+        app:indicatorUnselectedColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:scaleOnScroll="false"
+        app:setAutoPlay="true"
+        app:setAutoPlayDelay="3000"
+        app:spacing="0" >
+
+    </com.jama.carouselview.CarouselView>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+
+    <TextView
+        android:id="@+id/textDesciption"
+        android:layout_width="381dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="40dp"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
