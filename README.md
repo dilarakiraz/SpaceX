@@ -2,13 +2,13 @@
 
 ## Libraries and tools 🛠
 
-•ViewModel
-•LiveData
-•Retrofit
-•OkHttp
-•Glide
-•Hilt
-•Material Design
+•ViewModel<br/>
+•LiveData<br/>
+•Retrofit<br/>
+•OkHttp<br/>
+•Glide<br/>
+•Hilt<br/>
+•Material Design<br/>
 
 ![spacex](https://user-images.githubusercontent.com/76565172/184618674-0b35616c-8863-46f1-b5ee-9038a53b8485.PNG)
 ![Ekran Görüntüsü (1438)](https://user-images.githubusercontent.com/76565172/184618689-564b1b37-4e31-4d02-9239-4150775b37a1.png)
