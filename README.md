@@ -1,12 +1,13 @@
 # A Android Fetch Rockets, Upcoming Launches and Favorite Rockets with Kotlin + MVVM + Retrofit2 + Live Data + Glide
 Libraries and tools 🛠
-*ViewModel
-*LiveData
-*Retrofit
-*OkHttp
-*Glide
-*Hilt
-*Material Design
+
+•ViewModel
+•LiveData
+•Retrofit
+•OkHttp
+•Glide
+•Hilt
+•Material Design
 
 ![spacex](https://user-images.githubusercontent.com/76565172/184618674-0b35616c-8863-46f1-b5ee-9038a53b8485.PNG)
 ![Ekran Görüntüsü (1438)](https://user-images.githubusercontent.com/76565172/184618689-564b1b37-4e31-4d02-9239-4150775b37a1.png)
